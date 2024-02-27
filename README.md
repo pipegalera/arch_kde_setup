@@ -1,14 +1,26 @@
 # arch_setup
 
+## Distro 
+
+https://endeavouros.com/ , non NVIDIA version (GPU currently only works under Beta NVIDIA linux drivers).
+
+## First boot
+
+```
+pacman -Syu
+yay --save --answerdiff None --answerclean None --removemake
+```
+
+## Update to beta Linux drivers
+
+https://github.com/Frogging-Family/nvidia-all
 
 
-
-
-https://aur.archlinux.org/brave-bin.git
-
-
-- Update the system: pacman -Syu
-- Download Wallpapger from https://basicappleguy.com/
+```
+git clone https://github.com/Frogging-Family/nvidia-all.git
+cd nvidia-all
+makepkg -si
+```
 
 ## Activate Bluetooth 
 
@@ -16,7 +28,6 @@ https://aur.archlinux.org/brave-bin.git
 sudo systemctl start bluetooth
 sudo systemctl enable bluetooth
 ```
-
 
 ## Personalization 
 
@@ -96,6 +107,10 @@ unzip fonts.zip -d ~/.local/share
 ls -al ~/.local/share/fonts
 ```
 
+### Walpaper
+
+Download any Wallpapger from https://basicappleguy.com/. They are awesome. 
+
 ### Settings
 
 
@@ -112,3 +127,13 @@ ls -al ~/.local/share/fonts
 ## Latte-dock ??
 
 https://github.com/KDE/latte-dock/blob/master/INSTALLATION.md
+
+## Applications
+
+```
+ 
+```
+
+
+
+
