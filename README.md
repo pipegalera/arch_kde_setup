@@ -70,7 +70,7 @@ cd WhiteSur-cursors
 ./install.sh
 ```
 
-## Lightly Theme
+### Lightly Theme
 
 https://github.com/Luwx/Lightly
 
