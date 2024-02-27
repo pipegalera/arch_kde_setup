@@ -50,13 +50,13 @@ cd WhiteSur-gtk-theme
 ./install.sh
 ```
 
-For the log in screen: 
+For the Maclike log in screen: 
 
 ```
 cd ..
 cd sddm
 ./install.sh
-``
+```
 
 ### WhiteSur Icon Theme
 
