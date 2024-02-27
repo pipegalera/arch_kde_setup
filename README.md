@@ -177,4 +177,13 @@ git config --global user.email "pipegalera@gmail.com"
 git config --global user.name "Pipe Galera"
 ```
 
+## VS Code / VS Codium configuration 
+
+
+- **Change copy&paste behaviour**
+
+1. File > Preferences > Keyboard Shortcuts
+2. Search for "Terminal:Copy" and "Terminal:Paste" and change them for "Crtl+C" and "Crtl+V"
+
+
 Test that `gh repo list` displays all your repos. 
