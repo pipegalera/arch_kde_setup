@@ -2,7 +2,9 @@
 
 ## Distro 
 
-https://endeavouros.com/ , non NVIDIA version (GPU currently only works under Beta NVIDIA linux drivers).
+https://endeavouros.com/
+
+I installed it witth any GPU drivers, and then install them later since I needed NVIDIA beta drivers. 
 
 ## First boot
 
@@ -14,7 +16,6 @@ yay --save --answerdiff None --answerclean None --removemake
 ## Update to beta Linux drivers
 
 https://github.com/Frogging-Family/nvidia-all
-
 
 ```
 git clone https://github.com/Frogging-Family/nvidia-all.git
@@ -100,7 +101,7 @@ yay -S lightly-git
 
 ### Fonts
 
-``
+```
 git clone https://github.com/pipegalera/arch_setup.git
 cd arch_setup
 unzip fonts.zip -d ~/.local/share
@@ -124,16 +125,56 @@ Download any Wallpapger from https://basicappleguy.com/. They are awesome.
 - Workspace Behaviour -> Screen Looking -> The one that you like.
 - Startup and Shutdown -> Login Screen (SDDM) -> MacSonoma-Dark
 
-## Latte-dock ??
-
-https://github.com/KDE/latte-dock/blob/master/INSTALLATION.md
 
 ## Applications
 
 ```
- 
+yay -S timeshift-autosnap
+yay -S vscodium-bin
+yay -S flameshot-git
+yay -S brave-bin
+yay -S apostrophe
+yay -S vlc-git
+yay -S acestream-engine
+```
+
+## Python Environment Manager
+
+```
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
+```
+
+- **Create environment for preprocessing (Rapids)**
+
+https://rapids.ai/cudf-pandas/
+
+```
+conda create --solver=libmamba -n rapids -c rapidsai -c conda-forge -c nvidia rapids=23.12 python=3.10 cuda-version=12.0 pytorch
+```
+
+- **Create environment for deep learning (Pytorch 2.0)**
+
+https://pytorch.org/get-started/pytorch-2.0/
+
+```
+conda create -n pytorch2 python
+conda activate pytorch2
+pip3 install numpy --pre torch torchvision torchaudio --force-reinstall --index-url https://download.pytorch.org/whl/nightly/cu118
 ```
 
 
+## Link Github account
 
+```
+conda install gh --channel conda-forge	
+gh auth login
+git config --global user.email "pipegalera@gmail.com"
+git config --global user.name "Pipe Galera"
+```
 
+Test that `gh repo list` displays all your repos. 
