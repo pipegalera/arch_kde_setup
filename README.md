@@ -9,7 +9,13 @@ https://aur.archlinux.org/brave-bin.git
 
 - Update the system: pacman -Syu
 - Download Wallpapger from https://basicappleguy.com/
-- GUI Package manager: 
+
+## Activate Bluetooth 
+
+```
+sudo systemctl start bluetooth
+sudo systemctl enable bluetooth
+```
 
 
 ## Personalization 
