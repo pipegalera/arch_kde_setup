@@ -5,15 +5,8 @@
 
 1. Atuin: https://github.com/atuinsh/atuin
 2. https://github.com/ajeetdsouza/zoxide
-3. Alacritty install and configure
+3. Alacritty configure
 4. Install VLC or MPV
-5. Set up Autologin
-
-`sudo nano /etc/gdm/custom.conf`
-
-AutomaticLoginEnable=True
-AutomaticLogin=[YourUsername]
-
 5. Grub-reboot
 6. Temps monitor: https://www.reddit.com/r/kde/comments/13bf8ym/how_to_get_something_similar_to_vitals_for_gnome/
 
@@ -32,17 +25,8 @@ yay --save --answerdiff None --answerclean None --removemake
 
 ## Autologin 
 
-https://wiki.archlinux.org/title/SDDM#Autologin
+- Startup and Shutdown -> Login Screen (SDDM) -> Behaviour -> Automatically log in as user, Plasma.
 
-`sudo nano /etc/sddm.conf.d/autologin.conf`
-
-Paste: 
-
-```
-[Autologin]
-User=john
-Session=plasma
-```
 
 ## Update to beta Linux drivers
 
@@ -154,7 +138,6 @@ Download any Wallpapger from https://basicappleguy.com/. They are awesome.
 - Apperance -> Fonts -> Adjust all fonts -> SF Pro Display
 - Apperance -> Fonts -> Fixed width -> FiraCode Nerd Mono
 - Workspace Behaviour -> Screen Looking -> The one that you like.
-- Startup and Shutdown -> Login Screen (SDDM) -> MacSonoma-Dark
 ```
 
 ## Applications
