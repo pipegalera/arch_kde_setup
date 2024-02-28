@@ -113,7 +113,7 @@ https://github.com/Luwx/Lightly
 
 ```
 sudo pacman -S cmake extra-cmake-modules kdecoration qt5-declarative qt5-x11extras
-yay -S lightly-git
+yes | yay -S lightly-git
 ```
 
 - **Fonts**
@@ -131,7 +131,7 @@ Download any Wallpapger from https://basicappleguy.com/. They are awesome.
 
 - **Settings**
 
-
+```
 - Apperance -> Global Theme -> MacSonoma-Dark
 - Apperance -> Application Style -> Lightly
 - Apperance -> Application Style -> Configure GNOME/GTK Application Style -> GTK theme: WhiteSure-Dark
@@ -141,16 +141,16 @@ Download any Wallpapger from https://basicappleguy.com/. They are awesome.
 - Apperance -> Fonts -> Fixed width -> FiraCode Nerd Mono
 - Workspace Behaviour -> Screen Looking -> The one that you like.
 - Startup and Shutdown -> Login Screen (SDDM) -> MacSonoma-Dark
-
+```
 
 ## Applications
 
 ```
-yay -S timeshift-autosnap
-yay -S vscodium-bin
-yay -S flameshot-git
-yay -S brave-bin
-yay -S apostrophe
+yes | yay -S timeshift-autosnap
+yes | yay -S vscodium-bin
+yes | yay -S flameshot-git
+yes | yay -S brave-bin
+yes | yay -S apostrophe
 ```
 
 ## Python Environment Manager
