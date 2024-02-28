@@ -30,6 +30,20 @@ pacman -Syu
 yay --save --answerdiff None --answerclean None --removemake
 ```
 
+## Autologin 
+
+https://wiki.archlinux.org/title/SDDM#Autologin
+
+`sudo nano /etc/sddm.conf.d/autologin.conf`
+
+Paste: 
+
+```
+[Autologin]
+User=john
+Session=plasma
+```
+
 ## Update to beta Linux drivers
 
 https://github.com/Frogging-Family/nvidia-all
@@ -151,6 +165,7 @@ yes | yay -S vscodium-bin
 yes | yay -S flameshot-git
 yes | yay -S brave-bin
 yes | yay -S apostrophe
+yay -S alacritty-git
 ```
 
 ## Python Environment Manager
@@ -203,4 +218,11 @@ Test that `gh repo list` displays all your repos.
 2. Search for "Terminal:Copy" and "Terminal:Paste" and change them for "Crtl+C" and "Crtl+V"
 
 
+## Alacritty configuration 
+
+```
+cd .config
+mkdir alacritty
+touch alacritty.toml
+```
 
