@@ -1,10 +1,27 @@
-# arch_setup
+# 🚧 arch_setup 🚧
+
+
+## TBD 
+
+1. Atuin: https://github.com/atuinsh/atuin
+2. https://github.com/ajeetdsouza/zoxide
+3. Alacritty install and configure
+4. Install VLC or MPV
+5. Set up Autologin
+
+`sudo nano /etc/gdm/custom.conf`
+
+AutomaticLoginEnable=True
+AutomaticLogin=[YourUsername]
+
+5. Grub-reboot
+6. Temps monitor: https://www.reddit.com/r/kde/comments/13bf8ym/how_to_get_something_similar_to_vitals_for_gnome/
 
 ## Distro 
 
 https://endeavouros.com/
 
-I installed it witth any GPU drivers, and then install them later since I needed NVIDIA beta drivers. 
+I installed it with KDE Plasma desktop env and without any GPU drivers. Once the distro its installed, I installed the GPU drivers (I needed NVIDIA beta drivers that do not ship with Calamares). 
 
 ## First boot
 
@@ -34,7 +51,7 @@ sudo systemctl enable bluetooth
 
 https://www.youtube.com/watch?v=jWDgdC28tYo
 
-### Kvantum Theme engine
+- **Kvantum Theme engine**
 
 https://github.com/tsujan/Kvantum/tree/master/Kvantum
 
@@ -42,7 +59,7 @@ https://github.com/tsujan/Kvantum/tree/master/Kvantum
 sudo pacman -S kvantum
 ```
 
-### Sonora KDE Theme
+- **Sonora KDE Theme**
 
 https://github.com/vinceliuice/MacSonoma-kde
 
@@ -52,7 +69,7 @@ cd MacSonoma-kde
 ./install.sh --round
 ```
 
-### WhiteSur Theme
+- **WhiteSur Theme**
 
 https://github.com/vinceliuice/WhiteSur-gtk-theme
 
@@ -70,7 +87,7 @@ cd sddm
 ./install.sh
 ```
 
-### WhiteSur Icon Theme
+- **WhiteSur Icon Theme**
 
 https://github.com/vinceliuice/WhiteSur-icon-theme
 
@@ -80,7 +97,7 @@ cd WhiteSur-icon-theme
 ./install.sh -a
 ```
 
-### WhiteSur Cursors
+- **WhiteSur Cursors**
 
 https://github.com/vinceliuice/WhiteSur-cursors
 
@@ -90,7 +107,7 @@ cd WhiteSur-cursors
 ./install.sh
 ```
 
-### Lightly Theme
+- **Lightly Theme**
 
 https://github.com/Luwx/Lightly
 
@@ -99,7 +116,7 @@ sudo pacman -S cmake extra-cmake-modules kdecoration qt5-declarative qt5-x11extr
 yay -S lightly-git
 ```
 
-### Fonts
+- **Fonts**
 
 ```
 git clone https://github.com/pipegalera/arch_setup.git
@@ -108,11 +125,11 @@ unzip fonts.zip -d ~/.local/share
 ls -al ~/.local/share/fonts
 ```
 
-### Walpaper
+- **Walpaper**
 
 Download any Wallpapger from https://basicappleguy.com/. They are awesome. 
 
-### Settings
+- **Settings**
 
 
 - Apperance -> Global Theme -> MacSonoma-Dark
@@ -134,8 +151,6 @@ yay -S vscodium-bin
 yay -S flameshot-git
 yay -S brave-bin
 yay -S apostrophe
-yay -S vlc-git
-yay -S acestream-engine
 ```
 
 ## Python Environment Manager
@@ -177,8 +192,10 @@ git config --global user.email "pipegalera@gmail.com"
 git config --global user.name "Pipe Galera"
 ```
 
-## VS Code / VS Codium configuration 
+Test that `gh repo list` displays all your repos. 
 
+
+## VS Code / VS Codium configuration 
 
 - **Change copy&paste behaviour**
 
@@ -186,4 +203,4 @@ git config --global user.name "Pipe Galera"
 2. Search for "Terminal:Copy" and "Terminal:Paste" and change them for "Crtl+C" and "Crtl+V"
 
 
-Test that `gh repo list` displays all your repos. 
+
