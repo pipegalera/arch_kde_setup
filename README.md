@@ -16,6 +16,8 @@ pacman -Syu
 yay --save --answerdiff None --answerclean None --removemake
 ```
 
+- Adjust the window layout manager by `SUPER + t`
+
 ## Autologin 
 
 - Startup and Shutdown -> Login Screen (SDDM) -> Behaviour -> Automatically log in as user, Plasma.
