@@ -16,7 +16,7 @@ pacman -Syu
 yay --save --answerdiff None --answerclean None --removemake
 ```
 
-- Adjust the window layout manager by `SUPER + t`
+- Adjust the window layout manager by pressing `SUPER + t`
 
 ## Autologin 
 
