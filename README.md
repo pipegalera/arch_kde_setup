@@ -5,7 +5,6 @@
 
 1. Atuin: https://github.com/atuinsh/atuin
 2. https://github.com/ajeetdsouza/zoxide
-3. Alacritty configure
 5. Grub-reboot
 6. Temps monitor: https://www.reddit.com/r/kde/comments/13bf8ym/how_to_get_something_similar_to_vitals_for_gnome/
 
@@ -72,6 +71,7 @@ yes | yay -S flameshot-git
 yes | yay -S brave-bin
 yes | yay -S apostrophe
 yay -S alacritty-git
+yes | yay rstudio-desktop-bin
 sudo pacman -S vlc
 ```
 
