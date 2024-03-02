@@ -1,12 +1,7 @@
 # 🚧 arch_setup 🚧
 
 
-## TBD 
 
-1. Atuin: https://github.com/atuinsh/atuin
-2. https://github.com/ajeetdsouza/zoxide
-5. Grub-reboot
-6. Temps monitor: https://www.reddit.com/r/kde/comments/13bf8ym/how_to_get_something_similar_to_vitals_for_gnome/
 
 ## Distro 
 
@@ -73,6 +68,13 @@ yes | yay -S apostrophe
 yay -S alacritty-git
 yes | yay rstudio-desktop-bin
 sudo pacman -S vlc
+```
+
+https://github.com/atuinsh/atuin?tab=readme-ov-file#install
+
+```
+bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
+atuin import auto
 ```
 
 ## Python Environment Manager
