@@ -3,6 +3,15 @@
 
 
 
+
+## Problems
+
+1. Birghtness of the main screen randomly goes to 30% when the computer goes sleep model.
+2. Windows manager do not keep windows boxed in the monitor, the edges overflow the next monitor (maybe because they have different resolutions)
+3. No fractional scaling.
+4. Very difficult to adjust sizing of the windows manually.  
+
+
 ## Distro 
 
 https://endeavouros.com/
