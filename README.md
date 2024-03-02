@@ -129,11 +129,4 @@ Test that `gh repo list` displays all your repos.
 2. Search for "Terminal:Copy" and "Terminal:Paste" and change them for "Crtl+C" and "Crtl+V"
 
 
-## Alacritty configuration 
-
-```
-cd .config
-mkdir alacritty
-touch alacritty.toml
-```
 
